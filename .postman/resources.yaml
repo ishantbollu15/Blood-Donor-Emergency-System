@@ -4,8 +4,11 @@ workspace:
 
 localResources:
   collections:
-    - ../lifedrop-backend/LifeDrop_Postman_Collection.json
+    - ../lifedrop-backend/LifeDrop API
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
 
 cloudResources:
   collections:
     ../postman/collections/LifeDrop API: ffbe3984-d76d-4f6c-8482-fb6f4b95a097
+    ../lifedrop-backend/LifeDrop API: 764f692a-3507-4e92-af05-cfcfab4e4b51

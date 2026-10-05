@@ -1,0 +1,15 @@
+id: 01a10cb1-62ec-750b-8270-7dfcb2ef480c
+version: 1
+name: New Mock
+slug: new-mock-caafb
+enableSession: true
+protocol: http
+port: 4500
+autoRestartOnChange: true
+logging:
+  level: verbose
+  showBody: true
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true
