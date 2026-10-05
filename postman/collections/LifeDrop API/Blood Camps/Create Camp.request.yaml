@@ -1,0 +1,16 @@
+$kind: http-request
+url: http://localhost:8080/api/camps
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "Summer Blood Drive",
+        "date": "2026-11-15",
+        "locationType": "Hospital",
+        "address": "123 Health Ave, City",
+        "createdBy": "City Hospital"
+    }
+order: 2000

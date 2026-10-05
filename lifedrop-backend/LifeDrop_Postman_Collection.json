@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_postman_id": "764f692a-3507-4e92-af05-cfcfab4e4b51",
+    "name": "LifeDrop API",
+    "description": "Collection of API endpoints for the LifeDrop application backend.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"password\": \"secret123\",\n    \"role\": \"donor\",\n    \"extraInfo\": \"O+\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/auth/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "auth",
+                "register"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Login User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"johndoe@example.com\",\n    \"password\": \"secret123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Blood Camps",
+      "item": [
+        {
+          "name": "Get All Camps",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/camps",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "camps"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Camp",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Summer Blood Drive\",\n    \"date\": \"2026-11-15\",\n    \"locationType\": \"Hospital\",\n    \"address\": \"123 Health Ave, City\",\n    \"createdBy\": \"City Hospital\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/camps",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "camps"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

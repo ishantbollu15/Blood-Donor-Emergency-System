@@ -1,0 +1,11 @@
+# Use this workspace to collaborate
+workspace:
+  id: ee3c5b15-ebc3-4c7a-84c5-4bf04d05f198
+
+localResources:
+  collections:
+    - ../lifedrop-backend/LifeDrop_Postman_Collection.json
+
+cloudResources:
+  collections:
+    ../postman/collections/LifeDrop API: ffbe3984-d76d-4f6c-8482-fb6f4b95a097
